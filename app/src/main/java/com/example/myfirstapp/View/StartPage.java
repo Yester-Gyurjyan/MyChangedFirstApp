@@ -26,16 +26,7 @@ public class StartPage extends AppCompatActivity implements StartView {
         setImage();
         startNextPage();
     }
-    private void startButton() {
-        start.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext() , ChoosePhotoPage.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-    }
+  
     private void initData(){
         image = findViewById(R.id.image);
         start = findViewById(R.id.start);
